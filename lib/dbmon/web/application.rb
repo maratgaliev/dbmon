@@ -24,7 +24,6 @@ module Dbmon
 
     def initialize(klass)
       @klass = klass
-      ENV["DATABASE_URL"] = "postgresql://postgres:postgres@localhost:5432/mailer"
     end
 
     def settings
