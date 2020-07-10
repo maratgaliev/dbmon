@@ -1,0 +1,12 @@
+<div class="container w-full mx-auto pt-20">
+  <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-800 leading-normal">
+    <% if @data.reject{ |h| h[:api].size == 0 }.size > 0 %>
+      <%= erb :_stats, locals: { data: @data } %>
+    <% else %>
+      <div class="flex-1 text-right md:text-center">
+        <h1 class="font-bold uppercase text-gray-900 text-3xl truncate">No data collected</h1>
+      </div>
+    <% end %>
+  </div>
+  <%= erb :_table, locals: { data: @data } %>
+</div>

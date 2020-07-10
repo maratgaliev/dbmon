@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DBMON <%= environment_title_prefix %> - database usage</title>
+    <meta name="description" content="simple ui for database monitoring">
+    <meta name="keywords" content="rails, database, statistics">
+    <link href="<%= root_path %>/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/ico" href="<%= root_path %>/images/favicon.ico" />
+    <meta name="google" content="notranslate" />
+    <%= display_custom_head %>
+  </head>
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+      <%= erb :_nav %>
+      <div class="flex-grow container mx-auto sm:px-4 pt-6 pb-8">
+        <div class="flex flex-wrap">
+          <%= yield %>
+        </div>
+      </div>
+      <%= erb :_footer %>
+  </body>
+</html>
