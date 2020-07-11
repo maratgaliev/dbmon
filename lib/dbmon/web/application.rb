@@ -24,6 +24,7 @@ module Dbmon
 
     def initialize(klass)
       @klass = klass
+      RubyPGExtras.database_url = ENV["MON_DATABASE_URL"]
     end
 
     def settings

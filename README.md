@@ -22,6 +22,12 @@ $ gem install dbmon
 
 ## Usage
 
+Set your ENV variable:
+
+```bash
+export MON_DATABASE_URL="postgresql://postgres:postgres@PORT:PORT/DBNAME"
+```
+
 Add to your routes.rb:
 
 ```ruby
