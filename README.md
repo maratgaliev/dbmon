@@ -1,4 +1,13 @@
+
 # DBMON
+
+## Why?
+
+Simple UI dashboard for your Rails apps, shows DB usage statistics.
+
+Adapters supported:
+
+- PostgreSQL [via `ruby-pg-extras` gem]
 
 ## Installation
 
@@ -25,7 +34,7 @@ $ gem install dbmon
 Set your ENV variable:
 
 ```bash
-export MON_DATABASE_URL="postgresql://postgres:postgres@PORT:PORT/DBNAME"
+export MON_DATABASE_URL="postgresql://postgres:postgres@HOST:PORT/DBNAME"
 ```
 
 Add to your routes.rb:
